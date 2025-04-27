@@ -23,8 +23,6 @@ export const placeWeatherSlice = createSlice({
       };
     },
     setLoading: (state, action) => {
-      console.log(action.payload, 'action.payload');
-
       return {
         ...state,
         loading: action.payload,

@@ -1,8 +1,9 @@
 import React from 'react';
-import {TouchableOpacity, Image, StyleSheet} from 'react-native';
+import {TouchableOpacity, Image} from 'react-native';
 import {images} from '../../../../Assets/images';
 import Stack from '../../../../Components/Stack';
 import {useTheme} from '../../../ThemeModule/Components/ThemeContext';
+import {styles} from './ThemeToggle.styles';
 
 function ThemeToggle() {
   const {toggleTheme, theme} = useTheme();
@@ -19,15 +20,3 @@ function ThemeToggle() {
 }
 
 export default ThemeToggle;
-
-const styles = StyleSheet.create({
-  themeIconContainer: {
-    flexDirection: 'row',
-    justifyContent: 'flex-end',
-    marginBottom: 24,
-  },
-  themeIcon: {
-    height: 30,
-    width: 30,
-  },
-});

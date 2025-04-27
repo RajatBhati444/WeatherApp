@@ -1,12 +1,13 @@
 import React from 'react';
 import Stack from '../../../../Components/Stack';
-import {Image, StyleSheet} from 'react-native';
+import {Image} from 'react-native';
 import {images} from '../../../../Assets/images';
 import Typography from '../../../../Components/Typography';
 import LineItem from '../LineItem/LineItem';
 import {useSelector} from 'react-redux';
 import {placeData} from '../../Slices/WeatherSlices';
 import {useTheme} from '../../../ThemeModule/Components/ThemeContext';
+import {styles} from './WeatherDataContainer.styles';
 
 function WeatherDataContainer() {
   const {theme} = useTheme();
@@ -184,55 +185,3 @@ function WeatherDataContainer() {
 }
 
 export default WeatherDataContainer;
-
-const styles = StyleSheet.create({
-  searchContainer: {
-    flexDirection: 'row',
-    borderRadius: 10,
-    padding: 3,
-    marginBottom: 16,
-  },
-  searchInput: {
-    flex: 1,
-    padding: 10,
-    marginRight: 10,
-    flexDirection: 'row',
-  },
-  searchButton: {
-    padding: 10,
-    paddingHorizontal: 14,
-    borderRadius: 10,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  searchIcon: {
-    width: 20,
-    height: 20,
-    marginRight: 10,
-  },
-  weatherIcon: {
-    width: 80,
-    height: 80,
-    borderRadius: 8,
-  },
-  windIcon: {
-    width: 25,
-    height: 25,
-    marginRight: 10,
-  },
-  themeIconContainer: {
-    flexDirection: 'row',
-    justifyContent: 'flex-end',
-    marginBottom: 24,
-  },
-  themeIcon: {
-    height: 30,
-    width: 30,
-  },
-  errorText: {
-    color: 'red',
-    marginTop: 10,
-    fontSize: 16,
-    textAlign: 'center',
-  },
-});
