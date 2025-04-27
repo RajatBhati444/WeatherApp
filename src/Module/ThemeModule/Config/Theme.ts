@@ -1,0 +1,53 @@
+import {THEME_TYPE} from '../Types/CommonTypes';
+
+export const DayTheme: THEME_TYPE = {
+  type: 'light',
+  colors: {
+    primary: '#926247',
+    accent: '#9BB168',
+    background: '#dbd9d7',
+    lightBackground: '#ffffff',
+    surface: '#ffffff',
+    error: '#e63946',
+    text: '#000000',
+    onSurface: '#000000',
+    disabled: '#6c757d',
+    placeholder: '#6c757d',
+    backdrop: 'rgba(0,0,0,0.5)',
+    notification: '#ff006e',
+    white: '#ffffff',
+    black: '#000000',
+    success: '#25a820',
+    transparent: 'transparent',
+    adaptivePrimary: '#926247',
+    divider: 'rgba(0,0,0,0.26)',
+    orange: '#ED7E1C',
+    green: '#9BB168',
+  },
+};
+
+export const DarkTheme: THEME_TYPE = {
+  type: 'dark',
+  colors: {
+    primary: '#926247',
+    accent: '#9BB168',
+    background: '#212332',
+    lightBackground: '#2e3040',
+    surface: '#000000',
+    error: '#e63946',
+    text: '#ffffff',
+    onSurface: '#ffffff',
+    disabled: '#6c757d',
+    placeholder: '#6c757d',
+    backdrop: 'rgba(0,0,0,0.5)',
+    notification: '#ff006e',
+    white: '#ffffff',
+    black: '#000000',
+    success: '#25a820',
+    transparent: 'transparent',
+    adaptivePrimary: '#926247',
+    divider: '#ffffff',
+    orange: '#ED7E1C',
+    green: '#9BB168',
+  },
+};
